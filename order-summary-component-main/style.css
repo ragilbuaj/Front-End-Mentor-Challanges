@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&display=swap');
+
+:root{
+    --primary-font: 'Red Hat Display', sans-serif;
+    --primary-pale: hsl(225, 100%, 94%);
+    --primary-bright: hsl(245, 75%, 52%);
+    --neutral-vpale: hsl(225, 100%, 98%);
+    --neutral-desaturated: hsl(224, 23%, 55%);
+    --neutral-dark: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: var(--primary-font);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;   
+    background-size: contain;
+    background-color: var(--primary-pale);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+}
+
+.card{
+    max-width: 375px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.card-image{
+    max-width: 375px;
+    border-radius: 20px 20px 0 0;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.description h1, p, button, .plan{
+    margin-bottom: 20px;
+}
+
+.description h1{
+    font-size: 25px;
+}
+
+.description h1, .price strong{
+    color: var(--neutral-dark);
+}
+
+.description p{
+    color: var(--neutral-desaturated);
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    background-color: var(--neutral-vpale);
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.plan a{
+    color: var(--primary-bright);
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price strong{
+    font-size: 14px;
+}
+
+.price p{
+    color: var(--neutral-desaturated);
+    font-size: 14px;
+}
+
+.btn-payment{
+background-color: var(--primary-bright);
+    font-family: var(--primary-font);
+    color: white;
+    padding: 10px 82px 10px 82px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 3px 17px 17px -8px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 3px 17px 17px -8px rgba(0,0,0,0.53);
+    -moz-box-shadow: 3px 17px 17px -8px rgba(0,0,0,0.53);
+}
+
+.btn-cancel{
+    font-family: var(--primary-font);
+    color: var(--neutral-desaturated);
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.plan p{
+    margin: 0;
+}
+
+.btn-payment:hover{
+    background-color: hsl(251, 67%, 60%);
+}
+
+.btn-cancel:hover{
+    color: var(--neutral-dark);
+}
+
+.plan a:hover{
+    text-decoration: none;
+}
